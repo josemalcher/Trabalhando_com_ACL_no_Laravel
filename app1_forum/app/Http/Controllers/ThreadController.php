@@ -25,7 +25,7 @@ class ThreadController extends Controller
     {
         $threads = $this->thread->paginate(15);
 
-        return view('thread.index', compact('threads'));
+        return view('threads.index', compact('threads'));
     }
 
     /**
